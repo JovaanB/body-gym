@@ -1,6 +1,6 @@
 module.exports = {
   // SEO
-  title: "Gatsby Starter by ANOUN", // Navigation and Site Title
+  title: "Gatsby Starter by Jovan", // Navigation and Site Title
   titleTemplate: "%s · Material Business - Markdown", // Template for Page Titles
   description:
     "A Gatsby Starter by ANOUN with content sourcing from Markdown files. It uses the Material Design language and components for styling.",

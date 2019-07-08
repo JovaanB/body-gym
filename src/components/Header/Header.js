@@ -16,9 +16,9 @@ class Header extends Component {
       <header className={styles.siteHeader}>
         <nav>
           <ul>
-            <ListLink to={`/`}>home</ListLink>
-            <ListLink to={`/blog/`}>blog</ListLink>
-            <ListLink to={`/contact/`}>contact</ListLink>
+            <ListLink to={`/`}>Accueil</ListLink>
+            <ListLink to={`/blog/`}>Blog</ListLink>
+            <ListLink to={`/contact/`}>Contact</ListLink>
           </ul>
         </nav>
       </header>

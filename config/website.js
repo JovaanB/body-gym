@@ -1,7 +1,7 @@
 module.exports = {
   // SEO
   title: "Body-Gym Fourmies", // Navigation and Site Title
-  titleTemplate: "%s · Material Business - Markdown", // Template for Page Titles
+  titleTemplate: "%s · Body Gym", // Template for Page Titles
   description:
     "Votre centre de remise en forme - musculation.",
   siteUrl: "https://body-gym.netlify.com", // Domain of your site. No trailing slash!

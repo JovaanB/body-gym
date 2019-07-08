@@ -8,8 +8,8 @@ import Button from "@material/react-button"
 import Card from "@material/react-card"
 
 // import idahoOutlineLightTheme from "../images/icons/idaho-outline--lightTheme.svg"
-import heroImage from "../images/undraw-hero-image.svg"
-
+import heroImage from "../images/daniel.jpg"
+import Salle from '../images/salle.jpg'
 // Styles
 import "../styles/app.scss"
 
@@ -21,25 +21,25 @@ class IndexPage extends React.Component {
       <Layout>
         <SEO />
         <section className="anoun-home--section1">
-          <h3>Gatsby Starter by <span className="anoun-title">ANOUN</span></h3>
-          <h4>Material Business</h4>
-          <img src={heroImage} alt="anoun-hero" />
+          <h3>Bienvenue sur le site de <span className="anoun-title">BODY-GYM </span></h3>
+          <h4>Centre de remise en forme à Fourmies</h4>
+          <img src={heroImage} alt="daniel" />
           <Link to="/contact/">
             <Button raised className="mdc-button--round">
-              Contact Us
+              Contactez-nous
+            </Button>
+          </Link>
+          <Link to="/about/">
+            <Button raised className="mdc-button--round">
+              En savoir plus
             </Button>
           </Link>
         </section>
         <section className="anoun-home--section2">
-          <h3>This is the power statement section</h3>
-          <h3>Say something that stands out</h3>
-          <h3>Say something visitors will remember</h3>
-          <h3>
-            Say something <strong>bold</strong> about your brand
-          </h3>
+          
         </section>
         <section className="anoun-home--section3">
-          <h2>Blog Posts</h2>
+          <h2>Blog</h2>
           <div className="blog-posts__container">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug

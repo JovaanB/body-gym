@@ -101,7 +101,7 @@ code span::selection {
 }
 
 .mdc-card__media {
-  max-height: 256px;
+  max-height: 190px;
 }
 
 /* WIDE LAYOUT STYLES */
@@ -121,6 +121,7 @@ code span::selection {
 
 .mdc-button--round {
   border-radius: 25px;
+  margin-top: 12%;
 }
 
 .mdc-floating-label {
@@ -159,7 +160,8 @@ code span::selection {
 
 .anoun-home--section2 {
   width: 100%;
-  min-height: 90vh;
+  min-height: 20vh;
+  max-height: 20vh;
   display: flex;
   flex-direction: column;
   background: rgb(102, 51, 153);

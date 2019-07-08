@@ -27,13 +27,8 @@ class ContactForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fetch('https://submit-form.com/JOkjn0y8YzUohXij-0wMg', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      },
-      body: JSON.stringify(this.state)
+    fetch('https://mailthis.to/Jovaan', {
+      method: 'POST'
     })
       .then(this.handleSuccess)
       .catch(function(error) {
@@ -54,7 +49,7 @@ class ContactForm extends React.Component {
     return (
       
       <form
-        onSubmit={this.handleSubmit}
+        action="https://mailthis.to/bienvenujovan@gmail.com" method="POST" encType="multipart/form-data"
         className="anoun-contact__form"
       >
         {/* <!-- Prevent spam without a captcha --> */}
@@ -65,8 +60,9 @@ class ContactForm extends React.Component {
           autocomplete="off"
           hidden
         />
+        <input type="hidden" name="_confirmation" value="Votre message a été envoyé!" />
         <TextField
-          label="Full Name"
+          label="Nom"
           leadingIcon={<MaterialIcon icon="person" />}
         >
           <Input
@@ -84,7 +80,7 @@ class ContactForm extends React.Component {
             required
           />
         </TextField>
-        <TextField label="Phone" leadingIcon={<MaterialIcon icon="phone" />}>
+        <TextField label="Telephone" leadingIcon={<MaterialIcon icon="phone" />}>
           <Input
             value={this.state.phone}
             name="phone"
@@ -106,9 +102,9 @@ class ContactForm extends React.Component {
           trailingIcon={<MaterialIcon icon="send" />}
           onClick={this.onClickSendButton}
         >
-          send
+          Envoyer
         </Button>
-        <Snackbar open={this.state.open} message="Sent! We'll get back to you ASAP 😊" actionText="dismiss" />
+        <Snackbar open={this.state.open} message="Envoyé! Nous vous répondrons dès que possible 😊" actionText="dismiss" />
       </form>
     )
   }

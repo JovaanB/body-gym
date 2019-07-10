@@ -42,7 +42,7 @@ class Footer extends Component {
             />
           </a>
           <a
-            href="https://www.instagram.com/body_gym59"
+            href="https://www.facebook.com/body.gym.73"
             target="_blank"
             rel="noopener noreferrer"
           >

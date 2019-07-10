@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/Layout/Layout"
-import Lightbox from '../components/Lightbox'
+import Lightbox from '../components/Lightbox/Lightbox'
 
 
 const IndexPage = ({ data }) => (

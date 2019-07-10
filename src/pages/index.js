@@ -23,6 +23,7 @@ class IndexPage extends React.Component {
           <h3>Bienvenue sur le site de <span className="anoun-title">BODY-GYM </span></h3>
           <h4>Centre de remise en forme à Fourmies</h4>
           <img src={heroImage} alt="daniel" />
+          <div className="mdc">
           <Link to="/about/">
             <Button raised className="mdc-button--round">
               En savoir plus
@@ -33,6 +34,7 @@ class IndexPage extends React.Component {
               Contactez-nous
             </Button>
           </Link>
+          </div>
         </section>
         <section className="anoun-home--section2">
           
@@ -43,7 +45,7 @@ class IndexPage extends React.Component {
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                <Link to={node.fields.slug}>
+                <Link to={node.fields.slug} key={node.fields.slug}>
                   <Card
                     className="mdc-card--clickable anoun-blog-card"
                     key={node.fields.slug}

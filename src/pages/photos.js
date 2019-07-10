@@ -4,13 +4,14 @@ import PropTypes from 'prop-types'
 import SEO from "../components/SEO/SEO"
 import Layout from "../components/Layout/Layout"
 import Lightbox from '../components/Lightbox/Lightbox'
-
+import Fleche from '../images/icons/fleche.png'
 
 const IndexPage = ({ data }) => (
   <Layout>
       <SEO />
         <section className="anoun-home--section1">
-          <h3>Bienvenue sur le site de <span className="anoun-title">BODY-GYM </span></h3>
+          <h3>Bienvenue sur le site de <span className="anoun-title">BODY-GYM </span></h3><br/>
+          <img src={Fleche} alt="fleche" height="60px"/>
           </section>
       <Lightbox images={data.allImageSharp.edges} />
   </Layout>

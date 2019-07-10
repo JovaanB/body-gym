@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React, { Component } from "react"
 import instagramIcon from "../../images/icons/instagram-round-white-24px.svg"
+import FbIcon from '../../images/icons/facebook2.png'
 
 import styles from "./footer.module.scss"
 
@@ -15,6 +16,9 @@ class Footer extends Component {
             </li>
             <li>
               <Link to="/blog/">Blog</Link>
+            </li>
+            <li>
+              <Link to="/photos/">Photos</Link>
             </li>
             <li>
               <Link to="/about/">A propos</Link>
@@ -33,8 +37,20 @@ class Footer extends Component {
             <img
               src={instagramIcon}
               className={styles.footerIcon}
-              width="18px"
-              alt="instagram-social-link"
+              width="25px"
+              alt="facebook-social-link"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/body_gym59"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={FbIcon}
+              className={styles.footerIcon}
+              width="32px"
+              alt="facebook-social-link"
             />
           </a>
         </nav>

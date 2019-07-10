@@ -37,15 +37,15 @@ class IndexPage extends React.Component {
           </div>
         </section>
         <section className="anoun-home--section2">
-          
-        </section>
-        <section className="anoun-home--section3">
           <h2>Blog</h2>
+        </section>
+          
+        <section className="anoun-home--section3">
           <div className="blog-posts__container">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                <Link to={node.fields.slug} key={node.fields.slug}>
+                <Link to={node.fields.slug} key={node.fields.slug} className="card-link">
                   <Card
                     className="mdc-card--clickable anoun-blog-card"
                     key={node.fields.slug}

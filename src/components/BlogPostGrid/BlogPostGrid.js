@@ -16,7 +16,7 @@ function BlogPostGrid() {
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
-                  <Link to={node.fields.slug}>
+                  <Link to={node.fields.slug} className="card-link">
                     <Card
                       className="mdc-card--clickable anoun-blog-card"
                       key={node.fields.slug}

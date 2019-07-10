@@ -9,7 +9,6 @@ import Card from "@material/react-card"
 
 // import idahoOutlineLightTheme from "../images/icons/idaho-outline--lightTheme.svg"
 import heroImage from "../images/daniel.jpg"
-import Salle from '../images/salle.jpg'
 // Styles
 import "../styles/app.scss"
 
@@ -24,14 +23,14 @@ class IndexPage extends React.Component {
           <h3>Bienvenue sur le site de <span className="anoun-title">BODY-GYM </span></h3>
           <h4>Centre de remise en forme à Fourmies</h4>
           <img src={heroImage} alt="daniel" />
-          <Link to="/contact/">
-            <Button raised className="mdc-button--round">
-              Contactez-nous
-            </Button>
-          </Link>
           <Link to="/about/">
             <Button raised className="mdc-button--round">
               En savoir plus
+            </Button>
+          </Link>
+          <Link to="/contact/">
+            <Button raised className="mdc-button--round">
+              Contactez-nous
             </Button>
           </Link>
         </section>

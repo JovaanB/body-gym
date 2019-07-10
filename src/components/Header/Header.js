@@ -18,7 +18,9 @@ class Header extends Component {
           <ul>
             <ListLink to={`/`}>Accueil</ListLink>
             <ListLink to={`/blog/`}>Blog</ListLink>
+            <ListLink to={`/photos/`}>Photos</ListLink>
             <ListLink to={`/contact/`}>Contact</ListLink>
+
           </ul>
         </nav>
       </header>

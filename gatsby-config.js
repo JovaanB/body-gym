@@ -16,6 +16,14 @@ module.exports = {
     facebookAppID: "",
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `slides`,
+        path: `${__dirname}/src/images/slides/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

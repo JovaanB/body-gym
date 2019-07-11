@@ -15,17 +15,18 @@ const NotFoundPage = () => (
   <CenteredLayout>
     <SEO title="404: Not Found" />
     <img src={awkwardKidGif} width="300px" alt="awkward kid gif" />
-    <h1>Uh...this is awkward</h1>
+    <h1>Euh... il y a une erreur...</h1>
     <p>
-      Uh oh! It looks like the place you were looking for is no longer here or
-      there's a typo. Please check the URL for mistakes and try again.{" "}
+      Oh oh ! On dirait que l'endroit que vous cherchiez n'est plus là. il y a
+      une faute de frappe. Veuillez vérifier l'URL pour voir s'il y a des
+      erreurs et réessayez.{" "}
       <span role="img" aria-label="wink">
         😉
       </span>
     </p>
     <Link to="/">
       {/* // TODO add back icon */}
-      <Button raised>Go Back Home</Button>
+      <Button raised>Retour à l'accueil</Button>
     </Link>
   </CenteredLayout>
 )

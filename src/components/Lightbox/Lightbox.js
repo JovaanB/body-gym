@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
+import React, { Component, Fragment } from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import Img from "gatsby-image"
 
 class Lightbox extends Component {
   state = {
@@ -10,16 +10,19 @@ class Lightbox extends Component {
   }
 
   componentDidMount = () => {
-    window.addEventListener('keyup', this.handleKeyUp, false)
+    window.addEventListener("keyup", this.handleKeyUp, false)
   }
 
   componentWillUnmount = () => {
-    window.removeEventListener('keyup', this.handleKeyUp, false)
+    window.removeEventListener("keyup", this.handleKeyUp, false)
   }
 
   handleClick = (e, index) => {
     e.preventDefault()
-    this.setState({ showLightbox: !this.state.showLightbox, selectedImage: index })
+    this.setState({
+      showLightbox: !this.state.showLightbox,
+      selectedImage: index,
+    })
   }
 
   closeModal = () => {
@@ -65,24 +68,34 @@ class Lightbox extends Component {
         <Gallery>
           {images.map((img, i) => (
             <GalleryItem key={img.node.sizes.src}>
-              <a href={img.node.sizes.src} alt="Car Image" onClick={e => this.handleClick(e, i)}>
+              <a
+                href={img.node.sizes.src}
+                alt="Car Image"
+                onClick={e => this.handleClick(e, i)}
+              >
                 <StyledImg sizes={img.node.sizes} />
               </a>
             </GalleryItem>
           ))}
         </Gallery>
 
-        <LightboxModal visible={showLightbox} onKeyUp={e => this.handleKeyDown(e)}>
+        <LightboxModal
+          visible={showLightbox}
+          onKeyUp={e => this.handleKeyDown(e)}
+        >
           <LightboxContent>
             <Img sizes={images[selectedImage].node.sizes} />
             <Controls>
-              <Button onClick={this.closeModal}>Close</Button>
+              <Button onClick={this.closeModal}>Fermer</Button>
               <LeftRight>
                 <Button onClick={this.goBack} disabled={selectedImage === 0}>
-                  Previous
+                  Précédent
                 </Button>
-                <Button onClick={this.goForward} disabled={selectedImage === images.length - 1}>
-                  Next
+                <Button
+                  onClick={this.goForward}
+                  disabled={selectedImage === images.length - 1}
+                >
+                  Suivant
                 </Button>
               </LeftRight>
             </Controls>
@@ -142,8 +155,8 @@ const LightboxModal = styled.div`
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
-  opacity: ${props => (props.visible ? '1' : '0')};
-  visibility: ${props => (props.visible ? 'visible' : 'hidden')};
+  opacity: ${props => (props.visible ? "1" : "0")};
+  visibility: ${props => (props.visible ? "visible" : "hidden")};
 `
 const LightboxContent = styled.div`
   margin: 15px;

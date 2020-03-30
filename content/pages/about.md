@@ -34,7 +34,7 @@ Pour le 2ème : **26,40€** par mois avec abonnement à l'année.
 
 Autres :
 
-- Contrat de 3 mois : **39€** par mois
+- Contrat de 3 mois : **105€**
 - Contrat de 6 mois : **35€** par mois
 - Contrat d'un mois : **45€** par mois
 

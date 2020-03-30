@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const website = require("./config/website") 
+const website = require("./config/website")
 
 module.exports = {
   siteMetadata: {
@@ -36,6 +36,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/pages`,
         name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
     {

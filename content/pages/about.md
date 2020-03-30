@@ -18,23 +18,26 @@ Le samedi et dimanche - De 9h à 12h et de 14h à 16h30
 
 ### Tarifs
 
-Nous vous proposons des tarifs mensuels, semestriels ou à l'année allant de 20€ à 45€ par mois.
+Nous vous proposons des tarifs mensuels, semestriels ou à l'année allant de **20€** à **45€** par mois.
 
 Tarifs :
 
-- spécial étudiants : 24,90€ par mois avec abonnement 12 mois (35€ sans abonnement)
-- spécial +60 ans : 20€ par mois avec abonnement à l'année
-- spécial couple :
+- spécial **étudiants** : **24,90€** par mois avec abonnement 12 mois (**35€** sans abonnement)
+- spécial **+60 ans** : **20€** par mois avec abonnement à l'année
+- spécial **couple** :
 
-* Pour le 1er : 29,90€ par mois avec abonnement à l'année
-* Pour le 2ème : 26,40€ par mois avec abonnement à l'année
+Pour le 1er : **29,90€** par mois avec abonnement à l'année.
 
-- Autres :
+Pour le 2ème : **26,40€** par mois avec abonnement à l'année.
 
-* Contrat de 3 mois : 39€ par mois
-* Contrat de 6 mois : 35€ par mois
-* Contrat d'un mois : 45€ par mois
+---
 
-Séance avec un accompagnant : 5€ (8€ sans)
+Autres :
+
+- Contrat de 3 mois : **39€** par mois
+- Contrat de 6 mois : **35€** par mois
+- Contrat d'un mois : **45€** par mois
+
+Séance avec un accompagnant : **5€** (**8€** sans)
 
 Des vestiaires hommes et femmes, des casiers et des douches sont à votre disposition et bien-sûr tout cela sans suppléments.

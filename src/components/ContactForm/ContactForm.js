@@ -1,8 +1,8 @@
 import React from "react"
-import TextField, {Input} from "@material/react-text-field"
+import TextField, { Input } from "@material/react-text-field"
 import MaterialIcon from "@material/react-material-icon"
 import Button from "@material/react-button"
-import {Snackbar} from '@material/react-snackbar'
+import { Snackbar } from "@material/react-snackbar"
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class ContactForm extends React.Component {
       email: "",
       phone: "",
       message: "",
-      open:false
+      open: false,
     }
   }
 
@@ -27,8 +27,8 @@ class ContactForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault()
-    fetch('https://mailthis.to/Jovaan', {
-      method: 'POST'
+    fetch("https://mailthis.to/Jovaan", {
+      method: "POST",
     })
       .then(this.handleSuccess)
       .catch(function(error) {
@@ -42,29 +42,25 @@ class ContactForm extends React.Component {
       email: "",
       phone: "",
       message: "",
-      open:true
+      open: true,
     })
   }
   render() {
     return (
-      
       <form
-        action="https://mailthis.to/bienvenujovan@gmail.com" method="POST" encType="multipart/form-data"
+        action="https://mailthis.to/bienvenujovan@gmail.com"
+        method="POST"
+        encType="multipart/form-data"
         className="anoun-contact__form"
       >
         {/* <!-- Prevent spam without a captcha --> */}
+        <input type="checkbox" name="_honeypot" hidden />
         <input
-          type="checkbox"
-          name="_honeypot"
-          tabindex="-1"
-          autocomplete="off"
-          hidden
+          type="hidden"
+          name="_confirmation"
+          value="Votre message a été envoyé!"
         />
-        <input type="hidden" name="_confirmation" value="Votre message a été envoyé!" />
-        <TextField
-          label="Nom"
-          leadingIcon={<MaterialIcon icon="person" />}
-        >
+        <TextField label="Nom" leadingIcon={<MaterialIcon icon="person" />}>
           <Input
             value={this.state.name}
             name="name"
@@ -80,7 +76,10 @@ class ContactForm extends React.Component {
             required
           />
         </TextField>
-        <TextField label="Telephone" leadingIcon={<MaterialIcon icon="phone" />}>
+        <TextField
+          label="Telephone"
+          leadingIcon={<MaterialIcon icon="phone" />}
+        >
           <Input
             value={this.state.phone}
             name="phone"
@@ -104,7 +103,11 @@ class ContactForm extends React.Component {
         >
           Envoyer
         </Button>
-        <Snackbar open={this.state.open} message="Envoyé! Nous vous répondrons dès que possible 😊" actionText="dismiss" />
+        <Snackbar
+          open={this.state.open}
+          message="Envoyé! Nous vous répondrons dès que possible 😊"
+          actionText="dismiss"
+        />
       </form>
     )
   }

@@ -17,8 +17,7 @@
 @import "@material/react-card/index.scss";
 @import "@material/react-button/index.scss";
 @import "@material/react-text-field/index.scss";
-@import '@material/react-snackbar/index.scss';
-
+@import "@material/react-snackbar/index.scss";
 
 /* GLOBAL STYLES */
 
@@ -36,7 +35,9 @@ body {
   padding: 0;
   height: 100%;
   position: relative;
-  background-color: var(--mdc-theme-background);
+  background-image: url("/images/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--mdc-theme-on-background);
   line-height: 1.5rem;
 }
@@ -154,11 +155,12 @@ code span::selection {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
   text-align: left;
 }
 
 .anoun-home--section1 > h3 {
-  margin: 0 auto;
+  margin: 15px auto;
   text-align: center;
 }
 .anoun-home--section1 > img {
@@ -171,12 +173,12 @@ code span::selection {
   max-height: 20vh;
   display: flex;
   flex-direction: column;
-  background: rgb(102, 51, 153);
+  background: #7c0b2b;
   background: linear-gradient(
     130deg,
-    rgba(102, 51, 153, 1) 0%,
+    rgba(124, 11, 43, 1) 0%,
     rgba(164, 110, 218, 1) 100%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(62, 0, 12, 1) 100%
   );
   color: var(--mdc-theme-on-primary);
   padding: 1rem;
@@ -201,8 +203,7 @@ code span::selection {
   align-items: center;
   margin-bottom: 2rem;
 }
-
-.anoun-home--section3  > h2:first-of-type {
+.anoun-home--section3 > h2:first-of-type {
   margin: 2rem;
 }
 
@@ -272,7 +273,7 @@ code span::selection {
 
 /* TINY PHONE STYLES */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 550px) {
 }
 
 /* TABLET LAYOUT STYLES */

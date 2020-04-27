@@ -16,28 +16,31 @@ function BlogPostGrid() {
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
-                  <Link to={node.fields.slug} className="card-link">
+                  <Link
+                    to={node.fields.slug}
+                    key={node.title}
+                    className="card-link"
+                  >
                     <Card
                       className="mdc-card--clickable anoun-blog-card"
                       key={node.fields.slug}
                     >
-                        <Img
-                          className="mdc-card__media"
-                          fluid={
-                            node.frontmatter.featured_image.childImageSharp
-                              .fluid
-                          }
+                      <Img
+                        className="mdc-card__media"
+                        fluid={
+                          node.frontmatter.featured_image.childImageSharp.fluid
+                        }
+                      />
+                      <div className="anoun-blog-card-content__container">
+                        <h3>{title}</h3>
+                        <small>{node.frontmatter.date}</small>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html:
+                              node.frontmatter.description || node.excerpt,
+                          }}
                         />
-                        <div className="anoun-blog-card-content__container">
-                          <h3>{title}</h3>
-                          <small>{node.frontmatter.date}</small>
-                          <p
-                            dangerouslySetInnerHTML={{
-                              __html:
-                                node.frontmatter.description || node.excerpt,
-                            }}
-                          />
-                        </div>
+                      </div>
                     </Card>
                   </Link>
                 )

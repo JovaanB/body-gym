@@ -20,7 +20,7 @@ class Header extends Component {
             <ListLink to={`/blog/`}>Blog</ListLink>
             <ListLink to={`/photos/`}>Photos</ListLink>
             <ListLink to={`/contact/`}>Contact</ListLink>
-
+            <img src="/images/2.jpg" alt="BodyGym" className="anoun-title" />
           </ul>
         </nav>
       </header>
